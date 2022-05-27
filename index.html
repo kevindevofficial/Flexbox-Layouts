@@ -1,65 +1,100 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    
+<link rel="stylesheet" href="styles.css"></head>
 <body>
 
     <!-- This is the contact card layout -->
 
-    <div class="contact-card">
-        <div class="contact-card-padding-container">
-            <div class="left-contact-card-section-padding">
-                <button class="contact-button">=</button>
-                <div class="contact-info-section-padding">
-                    <div class="contact-icon-padding"><img src="blank" alt=""></div>
-                    <div class="contact-info-content-padding">
-                        <div class="contact-info-items1">1</div>
-                        <div class="contact-info-items2">2</div>
-                        <div class="contact-info-items3">3</div>
+<div class="contact-card">
+    <div class="contact-card-padding-container">
+        <div class="left-contact-card-section-padding">
+            <button class="contact-button">=</button>
+            <div class="contact-info-section-padding">
+                <div class="contact-icon-padding">image<img src="*" alt=""></div>
+                <div class="contact-info-content-padding">
+                    <div class="contact-info-items2">
+                        <div class="contact-info-mini-items2"><strong>Name::</strong></div>
+                        <div class="contact-info-mini-items3">
+                            <div class="contact-info-mini-items3-child1"></div>
+                            <div class="contact-info-mini-items3-child2"></div>
+                            <div class="contact-info-mini-items3-child3"></div>
+                            <div class="contact-info-mini-items3-child4"></div>
+                        </div>
                     </div>
                 </div>
-            </div>    
-        
-             <!-- right side of card     -->
-
-            <div class="right-contact-container">
-                <div class="right-contact-padding-container">
-                    <div class="right-contact-container-content">
-                        <div class="credit-card-container">
-                            <div class="credit-card-padding-container">
-                                <div class="credit-card-content">
-                                        <div class="credit-card-img"><img src="blank" alt="" class="credit-card-img-png"></div>
-                                        <div class="credit-card-item1"></div>
-                                        <div class="credit-card-item2"></div>
-                                    </div>
-                                </div>
-                        </div>
-
-                        <!-- card balance section -->
-
-                        <div class="cash-balance-container">
-                            <div class="cash-balance-padding-container">
-                                    <div class="cash-balance-flex-item1"></div>
-                                    <div class="cash-balance-flex-item2"></div>
-                            </div> 
-                        </div>
-
-                        <!-- status section -->
-
-                        <div class="status-container">
-                            <div class="status-container-padding-radius">
-                                <div class="status-container-content">requested</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
-        
             </div>
+        </div>    
+    
+            <!-- right side of card     -->
+
+        <div class="right-contact-container">
+                    <div class="credit-card-container">
+                                    <div class="credit-card-item1">credit-card-logo</div>
+                                    <div class="credit-card-item2">****</div>
+                                    <div class="credit-card-item3">0000</div>
+                    
+                            
+                    </div>
+
+                    <!-- card balance section -->
+
+                    <div class="cash-balance-container">
+                                <div class="cash-balance-flex-item1">$00.00</div>
+                                <div class="cash-balance-flex-item2">$00.00</div> 
+                    </div>
+
+                    <!-- status section -->
+
+                    <div class="status-container">
+                        <div class="bullet-icon">•</div>
+                        <div class="status-container-text">Requested</div>
+                    </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
